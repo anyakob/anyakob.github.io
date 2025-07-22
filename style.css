@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #fdf6e3 0%, #f5e1c7 100%);
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.card {
+    background: #fffaf2;
+    border-radius: 14px;
+    box-shadow: 0 4px 20px rgba(150, 120, 80, 0.1);
+    width: 380px;
+    padding: 32px;
+    text-align: center;
+    border: 2px solid #e8dbc7;
+    z-index: 1;
+}
+.card h1 {
+    margin: 0 0 10px;
+    font-size: 2em;
+    color: #856348;
+}
+.avatar {
+    display: block;
+    margin: 0 auto 16px auto;
+    width: 104px;
+    height: 104px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #e8dbc7;
+    background: #f5eee1;
+    box-shadow: 0 2px 10px rgba(160,120,80,0.10);
+}
+.card p.profession {
+    font-style: italic;
+    color: #AB9563;
+    margin: 0 0 20px;
+}
+.card p.description {
+    font-size: 1em;
+    line-height: 1.5;
+    color: #997e65;
+    margin-bottom: 24px;
+}
+.contacts {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 18px 0;
+}
+.contacts li {
+    margin: 6px 0;
+}
+.contacts a {
+    color: #b69971;
+    text-decoration: none;
+    font-weight: bold;
+}
+.contacts a:hover {
+    text-decoration: underline;
+}
+.cats {
+    margin: 20px 0 0 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+.cats img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(150, 120, 80, 0.09);
+    background: #f5eee1;
+}
+.dont-touch-btn {
+    position: fixed;
+    right: 24px;
+    bottom: 24px;
+    z-index: 100;
+    background: #efd6a9;
+    border: 2px solid #cbb591;
+    color: #775c33;
+    border-radius: 7px;
+    padding: 6px 15px;
+    font-size: 0.67em;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.2s, color 0.2s;
+    box-shadow: 0 2px 8px rgba(180, 150, 100, 0.10);
+}
+.dont-touch-btn:hover {
+    background: #f4e7c9;
+    color: #ad8d5c;
+}
+@media (max-width: 500px) {
+    .card { width: 97vw; padding: 10vw 2vw; }
+    .cats img { width: 68px; height: 68px; }
+    .dont-touch-btn { right: 10px; bottom: 10px; }
+}
